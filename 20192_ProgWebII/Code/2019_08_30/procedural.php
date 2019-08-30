@@ -5,11 +5,12 @@ function total_debitos_cliente($id_cliente) {
 }
 
 function registra_venda($id_cliente, $data) {
-    print 'total_debitos_cliente' . "<br/>";
+    print 'registra_venda' . "<br/>";
+    return 1;
 }
 
 function registra_venda_item($id_venda, $item) {
-    print 'registra_venda_item' . "<br/>";
+    print "registra_venda_item $id_venda $item" . "<br/>";
 }
 
 function consulta_estoque($produto){
