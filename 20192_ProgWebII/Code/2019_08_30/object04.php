@@ -22,6 +22,9 @@ class Team {
         if (is_numeric($capacity)){
             $this->capacity = $capacity;
         }
+
+        print "Creating " . $this->full_name . "\n";
+        
     }
 
     public function setFullName($value){
@@ -32,9 +35,14 @@ class Team {
     public function getFullName($value){
         return $this->full_name;
     }
+
+    function __destruct() {
+        print "Destroying " . $this->full_name . "\n";
+    }
 }
 
 $sao_paulo = new Team("São Paulo", "Tricolor", "Morumbi", 72000);
+unset($sao_paulo);
 #$sao_paulo->setFullName("São Paulo");
 
 //output
