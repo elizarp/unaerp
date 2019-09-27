@@ -10,6 +10,7 @@ Até a segunda-feira seguinte à aula
 
 
 Script criação base / tabela (executar um por vez)
+
 CREATE DATABASE books;
 
 USE books;
