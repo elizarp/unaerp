@@ -24,3 +24,5 @@ CREATE TABLE famous (
     name varchar(40),
     primary key (id_famous)
 );
+
+https://imasters.com.br/devsecops/utilizacao-de-checklist-para-validacao-de-requisitos-de-software
