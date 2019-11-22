@@ -26,3 +26,6 @@ CREATE TABLE famous (
 );
 
 https://imasters.com.br/devsecops/utilizacao-de-checklist-para-validacao-de-requisitos-de-software
+
+Gráficos JS
+https://www.chartjs.org/
