@@ -1,0 +1,8 @@
+- Segurança em Dispositivos IoT
+- BlockChain e Segurança de Dados-
+- IA como ata
+- Bancos de Dados Seguros
+- Criptomoedas
+- Estudos de Caso
+- Bots de Fake News
+- SegInfo nas Redes Sociais
