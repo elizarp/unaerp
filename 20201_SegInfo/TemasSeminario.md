@@ -1,6 +1,6 @@
 - Segurança em Dispositivos IoT
-- BlockChain e Segurança de Dados-
-- IA como ata
+- BlockChain e Segurança de Dados
+- IA como ataque
 - Bancos de Dados Seguros
 - Criptomoedas
 - Estudos de Caso
