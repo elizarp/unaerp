@@ -1,4 +1,0 @@
-- IA como ataque - 825732 | 825399
-- IA como defesa - 825856 | 820588
-- Segurança em Dispositivos IoT - 764557 | 824989 | 825976
-- Bots de Fake News - 825077 | 823974
