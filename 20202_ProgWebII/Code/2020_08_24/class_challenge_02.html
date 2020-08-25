@@ -1,0 +1,25 @@
+<html>
+	<head></head>
+	<script>
+		function FirstReverse(myString){
+			// Detailed
+			var myArray = myString.split('');
+
+			var reversedArray = myArray.reverse();
+
+			var joinArray = reversedArray.join('');
+          
+            return joinArray;
+
+			// Short 
+			//return myString.split('').reverse().join('');
+		}
+
+		var myVar = 'Testando reverse do JavaScript';
+		var result = FirstReverse(myVar);
+		console.log(result);
+	</script>
+	<body>
+
+	</body>
+</html>

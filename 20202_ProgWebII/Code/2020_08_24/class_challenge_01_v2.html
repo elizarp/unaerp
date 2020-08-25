@@ -1,0 +1,33 @@
+<html>
+
+<head></head>
+<script>
+	function FirstFactorial() {
+		var myNumber = document.getElementById('myNumber').value;
+		var result = 1;
+
+		for (var index = 1; index <= myNumber; index++) {
+			result = result * index;
+		}
+
+		document.getElementById('resultado').innerText = result;
+	}
+
+</script>
+
+<body>
+	<center>
+		<p>
+			Número: <input type="number" name="myNumber" id="myNumber" />
+		</p>
+		<p>
+			<input type="button" value="Calcular" onclick="FirstFactorial()">
+		</p>
+		<p>
+			Resultado:
+			<span id="resultado"></span>
+		</p>
+	</center>
+</body>
+
+</html>

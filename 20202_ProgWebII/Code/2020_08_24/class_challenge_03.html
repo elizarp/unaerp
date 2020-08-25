@@ -1,0 +1,22 @@
+<html>
+
+<head></head>
+<script>
+	function TimeConvert(myNumber) {
+		var hours = parseInt(myNumber / 60);
+		
+		var minutes = myNumber % 60;
+
+		return hours.toString() + ':' + minutes.toString();
+	}
+
+	var myInput = 33;
+	var result = TimeConvert(myInput);
+	console.log(result);
+</script>
+
+<body>
+
+</body>
+
+</html>
