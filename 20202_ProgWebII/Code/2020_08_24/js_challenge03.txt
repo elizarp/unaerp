@@ -4,15 +4,15 @@
     <p>
       What's your favourite team?: 
       <label>
-        <input type="radio" value="male" name="favteam" id="optsaopaulo">
+        <input type="radio" value="sp" name="favteam" id="optTeam">
         São Paulo
       </label>
       <label>
-        <input type="radio" value="female" name="favteam" id="optcorinthians">
+        <input type="radio" value="corinthians" name="favteam" id="optTeam">
         Corinthians
       </label>
       <label>
-        <input type="radio" value="female" name="favteam" id="optpalmeiras">
+        <input type="radio" value="palmeira" name="favteam" id="optTeam">
         Palmeiras
       </label>
     </p>
