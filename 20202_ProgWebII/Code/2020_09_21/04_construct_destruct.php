@@ -39,12 +39,17 @@ class Team {
     function __destruct() {
         print "Destroying " . $this->full_name . "\n";
     }
+
+    function __toString()
+    {
+        return "ToString: Full name (" . $this->full_name . ") Capacity (" . $this->capacity . ")\n ";
+    }
 }
 
 $sao_paulo = new Team("São Paulo", "Tricolor", "Morumbi", 72000);
-unset($sao_paulo);
+#unset($sao_paulo);
 #$sao_paulo->setFullName("São Paulo");
-
+echo $sao_paulo;
 //output
-var_dump($sao_paulo);
+#var_dump($sao_paulo);
 

@@ -1,10 +1,11 @@
 <?php
 
 class Team {
-    public $full_name;
+    private $full_name;
     public $nick_name;
     public $ground;
     public $capacity;
+    public $titles;
 }
 
 $sao_paulo = new Team;

@@ -25,7 +25,14 @@ $sao_paulo->nick_name = "Tricolor";
 $sao_paulo->ground = "Morumbi";
 $sao_paulo->capacity = 72000; 
 
+$santos = new Team;
+$santos->full_name = "Santos FC";
+$santos->nick_name = "Peixe";
+$santos->ground = "Vila Belmiro";
+$santos->capacity = 16068; 
+
 //output
+var_dump($santos);
 var_dump($sao_paulo);
 $sao_paulo->increase_capacity(1000);
 var_dump($sao_paulo);

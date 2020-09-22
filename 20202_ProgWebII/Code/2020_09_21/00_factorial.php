@@ -18,7 +18,7 @@ class Factorial {
     }
 
     public function result() {
-        return $this->calc_factorial($this->number);
+        return "O resultado é " . $this->calc_factorial($this->number);
     }
     
     /*public function result(){
@@ -30,5 +30,5 @@ class Factorial {
     }*/
 }
 
-$newfactorial = New Factorial(5);
+$newfactorial = New Factorial(10);
 echo $newfactorial->result();
