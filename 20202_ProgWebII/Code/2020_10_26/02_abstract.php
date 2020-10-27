@@ -23,10 +23,10 @@ abstract class Product {
 class Paper extends Product {
     
     public function getTypeName() {
-        return $this -> name .':'. $this -> type;
+        return $this->name .':'. $this->type;
     }
 
 }
 
 $product = new Paper('Sulfite','80g');
-echo $product->getTypeName();
+echo $product->getName();

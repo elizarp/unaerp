@@ -11,7 +11,7 @@ class Software{
         $this->id = self::$counter;
         $this->name = $name;
 
-        print "Software {$this->id} - {$this->name} <br/> \n";
+        echo "Software {$this->id} - {$this->name} <br/> \n";
     }
 }
 

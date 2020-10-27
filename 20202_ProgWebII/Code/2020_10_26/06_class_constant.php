@@ -4,7 +4,10 @@ class Person
 {
     private $name;
     private $genre;
-    const GENRES = array('M' => "Male", "F" => "Female");
+    const GENRES = array(
+                    'M' => "Male", 
+                    'F' => "Female"
+                );
 
     public function __construct($name, $genre)
     {
@@ -20,3 +23,7 @@ class Person
         return self::GENRES[$this->genre];
     }
 }
+
+
+$eliezer = new Person("Eliezer", "M");
+echo $eliezer-> getGenreDescription();

@@ -60,5 +60,10 @@ $book = new Book('Book Name', 10.0, $author);
 #$book = new Book('Book Name', 10.0, "teste");
 
 echo $book->getName(); //Book Name
+
 echo $book->getAuthor()->getName(); //Kelly
 echo $book->getAuthor()->getEmail(); //kelly@brainbell.com
+# ==
+$authorBook = $book->getAuthor();
+echo $authorBook->getName(); //Kelly
+echo $authorBook->getEmail(); //kelly@brainbell.com

@@ -21,6 +21,6 @@ class Dog implements Animal{
 }
 
 $dog = new Dog();
-echo $dog -> breath() . "<br/"; //breathing
-echo $dog -> bark() . "<br/"; //au au
-echo $dog -> eat() . "<br/"; //eating
+echo $dog->breath() . "<br/>"; //breathing
+echo $dog->bark() . "<br/>"; //au au
+echo $dog->eat() . "<br/>"; //eating
