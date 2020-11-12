@@ -1,0 +1,503 @@
+main{
+    display: block;
+    height: 100%;
+    background-color: #ffffff;
+    width: calc(100% - 300px);
+}
+
+main .main-content{
+    padding: 30px;
+    width: 100%;
+    height: calc(100% - 90px);
+    overflow-y: auto;
+}
+
+.main-content-title h2{
+    color: rgb(29, 58, 82);
+    font-style: italic;
+    font-size: 24px;
+}
+
+.main-content .panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+    border: 1px solid #ffffff;
+}
+
+.dashboard-content{
+    padding: 15px 0;
+}
+
+.dashboard-flex-parent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dashboard-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*Vertical*/
+    justify-content: space-around; /*Horizontal*/
+    width: 100%;
+    max-width: 650px;
+    height: 100%;
+    background-color: #ffffff;
+
+}
+/*Grafico Rosquinha*/
+.dash-grafic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 650px;
+    height: 400px;
+}
+
+.dash-grafic #donut_single_sms{
+    height: 100%;
+    width: 100%;
+}
+
+.dash-grafic #donut_single_call{
+    height: 100%;
+    width: 100%;
+}
+
+.dash-grafic h2{
+    padding-top: 8px;
+    color: rgb(29, 58, 82);
+    font-size: 22px;
+}
+/*FIM -------  Grafico Rosquinha*/
+
+/*Legenda Gráfico Rosquinha*/
+.dash-info{
+    width: 100%;
+    max-width: 650px;
+    height: 130px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dash-info .contratado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.dash-info .contratado h2{
+    text-decoration: none ;
+    text-transform: uppercase;
+    color: #3366cc;
+    font-size: 20px;
+}
+
+.dash-info .contratado p{
+    text-decoration: none ;
+    text-transform: uppercase;
+    color: #3366cc;
+    font-size: 18px;
+}   
+
+.dash-info .utilizado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.dash-info .utilizado h2{
+    text-decoration: none ;
+    text-transform: uppercase;
+    color: #dc3912;
+    font-size: 20px;
+}
+
+.dash-info .utilizado p{
+    text-decoration: none ;
+    text-transform: uppercase;
+    color: #dc3912;
+    font-size: 18px;
+}
+
+.dash-info .extras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.dash-info .extras h2{
+    text-decoration: none ;
+    text-transform: uppercase;
+    color: #ff9900;
+    font-size: 20px;
+}
+
+.dash-info .extras p{
+    text-decoration: none ;
+    text-transform: uppercase;
+    color: #ff9900;
+    font-size: 18px;
+}
+/*FIM ---------- Legenda Gráfico Rosquinha*/
+
+/*Tabela de valores*/
+.dash-legend{
+    width: 100%;
+    max-width: 650px;
+    height: 130px;
+    background-color: #ffffff;
+}
+
+
+.dash-legend table{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.dash-legend table,th,td{
+    border: 1px solid black;
+}
+.dash-legend thead th{
+    width: 20%;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: #3366cc;
+    color: #ffffff;
+}
+
+.dash-legend tbody th{
+    color: #3366cc;
+    font-size: 17px;
+    padding-left: 12px;
+    text-align: left;
+}
+
+.dash-legend td{
+    padding-left: 10px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/*FIM --------------- Tabela de valores*/
+
+/*Gráfico Tabela*/
+.dash-table{
+    width: 100%;
+    max-width: 650px;
+    height: 400px;
+    background-color: #ffffff;
+}
+
+.dash-table #chart-div_call{
+    width: 650px; 
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dash-table #chart-div_sms{
+    width: 650px; 
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dash-table h2{
+    font-size: 16px;
+    text-decoration: none ;
+    text-transform: uppercase;
+    padding: 10px 8px;
+}
+
+.dash-table-info{
+    width: 100%;
+    max-width: 650px;
+    height: 80px;
+    background-color: #3366cc;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.dash-table-info p{
+    font-size: 20px;
+    text-decoration: none ;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+
+/*FIM -------------------- Gráfico Tabela*/
+
+
+/*Responsive DashBoard */
+
+@media screen and  (max-width: 1720px){
+
+    .dashboard-flex-parent{
+        flex-wrap: wrap;
+    }
+    
+    .dashboard-card{
+        width: 710px;
+    }
+
+    .dash-grafic{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        width: 100%;
+        height: 400px;
+    }
+
+    .dash-grafic #donut_single_sms{
+        height: 80%;
+        width: 300px;
+    }
+    
+    .dash-grafic #donut_single_call{
+        height: 80%;
+        width: 300px;
+    }
+
+    .dash-table h2{
+        margin-top: 10px;
+    }
+}
+
+@media screen and  (max-width: 999px){
+    .dash-table{
+        width: 100%;
+        max-width: 270px;
+        height: 350px;
+    }
+    
+    .dash-table #chart-div_call{
+        width: 270px; 
+        height: 200px;
+    }
+    
+    .dash-table #chart-div_sms{
+        width: 270px; 
+        height: 200px;
+       
+    }
+}
+
+@media screen and  (max-width: 950px){
+
+    main{
+        display: block;
+        width: calc(100%);
+        z-index: 1;
+        position: relative;
+    }
+
+    .dash-table{
+        width: 100%;
+        max-width: 300px;
+        height: 350px;
+        background-color: #ffffff;
+    }
+    
+    .dash-table #chart-div_call{
+        width: 300px; 
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .dash-table #chart-div_sms{
+        width: 300px; 
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .dash-legend{
+        width: 100%;
+        max-width: 400px;
+        height: 250px;
+    }
+    
+    
+    .dash-legend table{
+        width: 100%;
+        height: 80%;
+        
+    }
+    .dash-legend thead th{
+        width: 20%;
+        height: 30px;
+        padding-left: 6px;
+        font-size: 16px;
+        text-transform: uppercase;
+        background-color: #3366cc;
+        color: #ffffff;
+    }
+    
+    .dash-legend tbody th{
+        color: #3366cc;
+        font-size: 14px;
+        padding-left: 8px;
+        text-align: left;
+    }
+    
+    .dash-legend td{
+        padding-left: 10px;
+        font-size: 16px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .dash-info .contratado h2{
+        text-decoration: none ;
+        text-transform: uppercase;
+        color: #3366cc;
+        font-size: 16px;
+    }
+    
+    .dash-info .contratado p{
+        text-decoration: none ;
+        text-transform: uppercase;
+        color: #3366cc;
+        font-size: 14px;
+    } 
+    
+    .dash-info .utilizado h2{
+        text-decoration: none ;
+        text-transform: uppercase;
+        color: #dc3912;
+        font-size: 16px;
+    }
+    
+    .dash-info .utilizado p{
+        text-decoration: none ;
+        text-transform: uppercase;
+        color: #dc3912;
+        font-size: 14px;
+    }
+    
+    .dash-info .extras h2{
+        text-decoration: none ;
+        text-transform: uppercase;
+        color: #ff9900;
+        font-size: 16px;
+    }
+    
+    .dash-info .extras p{
+        text-decoration: none ;
+        text-transform: uppercase;
+        color: #ff9900;
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and  (max-width: 400px){
+    
+    main{
+        display: block;
+        height: 100%;
+        background-color: #ffffff;
+        width: calc(100%);
+        z-index: 1;
+        position: relative;
+    }
+    
+    .dash-table{
+        width: 100%;
+        max-width: 250px;
+        height: 300px;
+        background-color: #ffffff;
+    }
+    
+    .dash-table #chart-div_call{
+        width: 250px; 
+        height: 170px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .dash-table #chart-div_sms{
+        width: 250px; 
+        height: 170px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .dash-table-info{
+        height: 45px;
+        width: 100%;
+        max-width: 260px;
+        border-radius: 42px;
+    }
+    
+    .dash-table-info p{
+        font-size: 15px;
+        text-align:center ;
+    }
+
+}
+
+
+@media screen and  (max-width: 350px){
+    main{
+        display: block;
+        height: 100%;
+        background-color: #ffffff;
+        width: calc(100%);
+        z-index: 1;
+        position: relative;
+    }
+    
+    .dash-table{
+        width: 100%;
+        max-width: 230px;
+        height: 300px;
+        background-color: #ffffff;
+    }
+    
+    .dash-table #chart-div_call{
+        width: 230px; 
+        height: 170px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .dash-table #chart-div_sms{
+        width: 230px; 
+        height: 170px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}

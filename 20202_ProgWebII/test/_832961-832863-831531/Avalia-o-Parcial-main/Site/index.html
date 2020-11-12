@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Dashboard | Expresso API</title>
+
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <link href="css/expressoapi.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <div id="wrapper">
+
+    <ul class="barranav bg-gradiente-um painel painel-negro accordion" id="accordionPainel">
+
+
+      <a class="painel-marca d-flex alinha-item-centro justificado-conteudo-centro" href="index.html">
+        <div class="painel-marca-icon ">
+          <i class="fas fa-truck"></i>
+        </div>
+        <div class="painel-marca-texto margem3">Expresso API </div>
+      </a>
+
+      <hr class="painel-divisor margem0">
+
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <i class="fas fa-fw fa-chart-bar"></i>
+          <span>Dashboard</span></a>
+      </li>
+
+      <hr class="painel-divisor">
+      
+      <div class="painel-titulo">
+        Opções
+     
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#">
+          <i class="fas fa-fw fa-cog"></i>
+          <span>Configurações</span>
+        </a>
+        <a class="nav-link collapsed" href="login.html">
+          <i class="fas fa-sign-out-alt"></i>
+          <span>Log out</span>
+        </a>
+      </li>
+
+      <hr class="painel-divisor nenhum md-block">
+
+    </ul>
+   
+    <div id="content-wrapper" class="d-flex col-flex">
+
+      <div id="content">
+
+        <nav class="navbar navbar-expand navbar-light bg-branco topbar margem4 static-top sombra">
+
+          <ul class="barranav margem1-auto">
+
+            <li class="nav-item semseta margem1-1">
+              <a class="nav-link " href="#" id="alertsDropdown" role="button" data-togglmd-e="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+
+                <span class="badge badge-danger badge-counter">1</span>
+              </a>
+            </li>
+
+            <li class="nav-item semseta margem1-1">
+              <a class="nav-link" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-envelope fa-fw"></i>
+          
+                <span class="badge badge-danger badge-counter">9+</span>
+              </a>
+            </li>
+
+            <div class="topbar-divisor nenhum d-sm-block"></div>
+
+            <li class="nav-item semseta">
+              <a class="nav-link" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="margem2-1 nenhum d-lg-nalinha texto-cinza-6 pqno">Usuário Teste</span>
+                <img class="img-profile circuloarred" src="imagens/img.jpg">
+              </a>
+          
+            </li>
+
+          </ul>
+
+        </nav>
+  
+        <div class="containerb">
+
+          <div class="d-sm-flex alinha-item-centro justifica-conteudo-entre margem4">
+            <h1 class="h3 margem0-1 texto-cinza-8">Dashboard</h1>
+            
+          </div>
+
+          <div class="linha">
+
+            <div class="c9">
+              <div class="card sombra margem4">
+               
+                <div class="card-cabecalho padd3 d-flex flex-row alinha-item-centro justifica-conteudo-entre">
+                  <h6 class="margem0 font-negrito texto-primeiro">Número diário de SMS</h6>
+        
+                </div>
+              
+                <div class="card-corpo">
+                  <div class="chart-area">
+                    <canvas id="myAreaChart"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          
+            <div class=" c11">
+              <div class="card sombra margem4">
+                
+                <div class="card-cabecalho py-3 d-flex flex-row alinha-item-centro justifica-conteudo-entre">
+                  <h6 class="margem0 font-negrito texto-primeiro">SMS</h6>
+                 
+                </div>
+                <!-- Card Body -->
+                <div class="card-corpo">
+                  <div class="chart-pie pt-4 pb-2">
+                    <canvas id="myPieChart"></canvas>
+                  </div>
+                  <div class="mt-4 texto-centro pqno">
+                    <span class="mr-2"><br>
+                      <i class="fas fa-circle texto-primeiro"></i> Contratado
+                    </span>
+                    <span class="mr-2">
+                      <i class="fas fa-circle texto-danger"></i> Utilizado
+                    </span>
+                    <span class="mr-2">
+                      <i class="fas fa-circle texto-warning"></i> Extras
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="linha">
+
+            <div class="c9">
+              <div class="card sombra margem4">
+
+                <div class="card-cabecalho padd3 d-flex flex-row alinha-item-centro justifica-conteudo-entre">
+                  <h6 class="margem0 font-negrito texto-primeiro">Número diário de CHAMADAS</h6>
+        
+                </div>
+
+                <div class="card-corpo">
+                  <div class="chart-area">
+                    <canvas id="myAreaChart2"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+     
+            <div class=" c11">
+              <div class="card sombra margem4">
+
+                <div class="card-cabecalho py-3 d-flex flex-row alinha-item-centro justifica-conteudo-entre">
+                  <h6 class="margem0 font-negrito texto-primeiro">CHAMADAS EXCEDENTES</h6>
+                 
+                </div>
+        
+                <div class="card-corpo">
+                  <div class="chart-pie pt-4 pb-2">
+                    <canvas id="myPieChart2"></canvas>
+                  </div>
+                  <div class="mt-4 texto-centro pqno">
+                    <span class="mr-2"><br>
+                      <i class="fas fa-circle texto-primeiro"></i> Contratado
+                    </span>
+                    <span class="mr-2">
+                      <i class="fas fa-circle texto-danger"></i> Utilizado
+                    </span>
+                    <span class="mr-2">
+                      <i class="fas fa-circle texto-warning"></i> Extras
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<div class="linha">
+  <div class="c5 margem4">
+    <div class="card bg-danger texto-branco sombra">
+      <div class="card-corpo">
+        Detalhes do meu plano SMS em
+        <div class="texto-branco-50 pqno">período selecionado</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+          <div class="linha">
+
+            <div class="c6 c7 margem4">
+              <div class="card sombra altura100 padd2">
+                <div class="card-corpo">
+                  <div class="linha no-gutters alinha-item-centro">
+                    <div class="col margem2-1">
+                      <div class="texto-xs font-negrito texto-primeiro texto-caixaalta margemb-1">Nome</div>
+                      <div class="h5 margem0-1 font-negrito texto-cinza-8">APP20</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-broadcast-tower fa-2x texto-cinza-3"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="c6 c7 margem4">
+              <div class="card sombra altura100 padd2">
+                <div class="card-corpo">
+                  <div class="linha no-gutters alinha-item-centro">
+                    <div class="col margem2-1">
+                      <div class="texto-xs font-negrito texto-primeiro texto-caixaalta margemb-1">Valor Mensal</div>
+                      <div class="h5 margem0-1 font-negrito texto-cinza-8">R$ 500,00</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-dollar-sign fa-2x texto-cinza-3"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="c6 c7 margem4">
+              <div class="card sombra altura100 padd2">
+                <div class="card-corpo">
+                  <div class="linha no-gutters alinha-item-centro">
+                    <div class="col margem2-1">
+                      <div class="texto-xs font-negrito texto-primeiro texto-caixaalta margemb-1">Valor Adicional</div>
+                      <div class="linha no-gutters alinha-item-centro">
+                        <div class="col-auto">
+                          <div class="h5 margem0-1 font-negrito texto-cinza-8">R$ 0,10</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-plus fa-2x texto-cinza-3"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="c6 c7 margem4">
+              <div class="card sombra altura100 padd2">
+                <div class="card-corpo">
+                  <div class="linha no-gutters alinha-item-centro">
+                    <div class="col margem2-1">
+                      <div class="texto-xs font-negrito texto-primeiro texto-caixaalta margemb-1">Qtde Extra Máxima</div>
+                      <div class="h5 margem0-1 font-negrito texto-cinza-8">1000</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-comments fa-2x texto-cinza-3"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="linha">
+            
+            <div class="c5 margem4">
+
+              <div class="card sombra margem4">
+                <div class="card-cabecalho paddb3">
+                  <h6 class="margem0 font-negrito texto-primeiro">Meu Uso</h6>
+                </div>
+                <div class="card-corpo">
+                  <h4 class="pqno font-negrito">Quantidade <span class="float-right">10.000</span></h4>
+                  <div class="progresso margem4">
+                    <div class="progresso-bar bg-primeiro" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h4 class="pqno font-negrito">Usados <span class="float-right">0</span></h4>
+                  <div class="progresso margem4">
+                    <div class="progresso-bar bg-primeiro" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h4 class="pqno font-negrito">Disponíveis <span class="float-right">10.000</span></h4>
+                  <div class="progresso margem4">
+                    <div class="progresso-bar bg-primeiro" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h4 class="pqno font-negrito">Extras <span class="float-right">1.000</span></h4>
+                  <div class="progresso margem4">
+                    <div class="progresso-bar bg-warning" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h4 class="pqno font-negrito">Valor Mensal <span class="float-right">R$ 500,00</span></h4>
+                  <div class="progresso margem4">
+                    <div class="progresso-bar bg-sucesso" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h4 class="pqno font-negrito">Valor Adicional por Extra <span class="float-right">R$ 0,10</span></h4>
+                  <div class="progresso margem4">
+                    <div class="progresso-bar bg-warning" role="progressbar" style="width: 1%" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h4 class="pqno font-negrito">Valor Total <span class="float-right">R$ 500,00</span></h4>
+                  <div class="progresso margem4">
+                    <div class="progresso-bar bg-sucesso" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+            
+          </div>
+
+        </div>
+       
+      </div>
+      
+      <footer class="adesivo-rodape bg-branco">
+        <div class="container margem-auto1">
+          <div class="copyright texto-centro my-auto">
+            <span>Copyright &copy; Expresso API 2020</span>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+  </div>
+
+  <a class="scroll-to-top arredondado" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-cabecalho">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="fechar" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secundario" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primeiro" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="vendor/jquery/jquery.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
+  <script src="vendor/jquery-easing/jquery.easing.js"></script>
+
+  <script src="js/expressoapi.js"></script>
+
+  <script src="vendor/chart.js/Chart.js"></script>
+
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
+  <script src="js/demo/chart-area-demo2.js"></script>
+  <script src="js/demo/chart-pie-demo2.js"></script>
+
+</body>
+
+</html>

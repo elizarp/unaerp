@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.login{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.div-login{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9fafb;
+}
+
+.banner-login{
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-login img{
+    position: relative;
+    bottom: 40px;
+}
+
+.banner-login h2{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size:66px;
+    color: firebrick;
+    font-family: 'Roboto', sans-serif;
+}
+
+.div-login p{
+    font-size:36px;
+    color: firebrick;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#emailHelp{
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Monda', sans-serif;
+    padding-left: 10px;
+}
+.label {
+    color:rgb(29, 58, 82);
+    font-size: 24px;
+    font-family: 'Monda', sans-serif;
+}
+
+#check-forget{
+    font-family: 'Monda', sans-serif;
+    color:rgb(37, 74, 104) ;
+}
+
+#checkbox{
+    color:rgb(37, 74, 104) ;
+}
+.divbotao{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.btnLogin{
+    height: 45px;
+    width: 140px;
+    font-family: 'Monda', sans-serif;
+    font-size: 20px;
+    background: linear-gradient(135deg, rgb(38, 74, 104),#007bff);
+    border: 1px solid rgb(38, 74, 104);
+    color: #ffffff;
+
+}
+
+.btnLogin:hover{
+    border: none;
+    color: #ffffff;
+    transform: scale(1.03);
+    transition: .2s;
+}
+.forget{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.forget a{
+    color:rgb(37, 74, 104) ;
+}
+
+/*responsive*/
+@media screen and (max-width:1280px){
+    .banner-login{
+        width: 50%;
+        padding: 0 2%;
+    }
+
+    .banner-login img{
+        max-width: 400px;
+    }
+
+}
+
+@media screen and (max-width:991px){
+    .banner-login{
+        display: none;
+    }
+
+    .div-login{
+        width: 100%;
+    }
+}

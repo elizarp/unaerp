@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Login</title>
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="CSS/all.css">
+</head>
+<body>
+    <div class="login">
+        <div class="banner-login">
+             <img src="images/Logo.png" alt="Logo de Um caminhão">
+            <h2>Expresso API</h2>
+        </div>
+
+        <div class="div-login">
+            <div class="container">
+                <p>Log In</p>
+                <form class="form-login">
+                    <div class="form-group" id="email-div">
+                        <label for="labelEmail" class="label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" onchange ="helpEmail();">
+                        <small id="emailHelp" class="form-text text-muted">Seu email está seguro conosco!</small>
+                    </div>
+                    <div class="form-group" id="senha-div">
+                        <label for="labelSenha" class="label">Senha</label>
+                        <input type="password" class="form-control" id="inputSenha">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="checkbox">
+                        <label class="form-check-label" id="check-forget" for="exampleCheck1">Lembrar de mim</label>
+                    </div>
+                    <div class="divbotao">
+                        <button type="button" class="btn btnLogin">Login</button>
+                    </div>
+                            
+                </form>
+                <div class="dropdown-divider"></div>
+                <div class="forget">
+                    <a class="btn btn-link" href="mailto:andre.artuzo@sou.unaerp.edu.br">Esqueceu sua senha?</a>
+                </div>
+                        
+            </div>
+        </div>
+    </div>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/fontawesome/js/all.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

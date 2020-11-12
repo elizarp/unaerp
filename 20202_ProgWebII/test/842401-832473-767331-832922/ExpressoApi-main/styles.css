@@ -1,0 +1,117 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+:root{
+	--color-primary: #0D47A1;
+	--color-secondary-blue: #648CDD;
+	--color-background: #F5F5F5;
+	--color-background-cards: #EBEBEB;
+	--color-text-gray: #343A40;
+	--color-red: #E63946;
+	--color-green: #3FA777;
+	--color-yellow: #FFE775;
+	--color-button: #0A3880;
+	--color-button-text: #F5F5F5;
+	--color-button-hover: #0A306B;
+	--color-input-title: #C5D4EC;
+	--color-input-border-gray: #BFBFBF;
+	--color-input-text: rgba(64, 64, 64, 54%);
+	--color-menu-sidebar: #343A40;
+	--color-menu-contrast: #494E53;
+	--color-shadow: #888888;
+	--color-background-graphic:#FFFFFF;
+	--color-white: #FFFFFF;
+
+	--header-height: 56px;
+}
+
+body {
+    height: 100vh;
+    font-family: Poppins;
+    background-color: var(--color-background);
+  }
+  
+  #right-side{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-primary);
+  }
+
+  .row, .container-fluid{
+      height: 100%;
+  }
+
+ img{
+     margin-top: 56px;
+ }
+
+ form, button{
+     width: 281px;
+ }
+
+ button.btn.btn-primary{
+     margin-top: 32px;
+     color: var(--color-button-text);
+     border-color: var(--color-button);
+     background-color: var(--color-button);
+ }
+ 
+
+ label{
+     font-size: 14px;
+     font-weight: 300;
+     color: var(--color-input-title);
+ }
+
+ label.form-check-label, a{
+     font-size: 12px;
+     font-weight: 300;
+     color: var(--color-yellow);
+ }
+
+ span {
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--color-input-title);
+}
+
+.form-check-label{
+    padding-left: 0%;
+}
+
+.form-group{
+    margin-top: 24px;
+}
+
+.form-group.form-check {
+    display: flex;
+    margin-top: 9px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-check-input {
+    margin-top: 0; 
+}
+
+.images{
+    display: grid;
+    margin-top: 10px;
+    margin-left: 72px;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-eye-slash:before, .fa-eye:before{
+    color: var(--color-primary);
+}
+
+#show_hide_password{
+    align-items: center;
+}
+
+.input-group-addon {
+    height: 36px;
+    border: none;
+    background-color: var(--color-background);
+}

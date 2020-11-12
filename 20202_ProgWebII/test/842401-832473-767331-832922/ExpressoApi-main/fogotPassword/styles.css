@@ -1,0 +1,96 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+:root{
+	--color-primary: #0D47A1;
+	--color-secondary-blue: #648CDD;
+	--color-background: #F5F5F5;
+	--color-background-cards: #EBEBEB;
+	--color-text-gray: #343A40;
+	--color-red: #E63946;
+	--color-green: #3FA777;
+	--color-yellow: #FFE775;
+	--color-button: #0A3880;
+	--color-button-text: #F5F5F5;
+	--color-button-hover: #0A306B;
+	--color-input-title: #C5D4EC;
+	--color-input-border-gray: #BFBFBF;
+	--color-input-text: rgba(64, 64, 64, 54%);
+	--color-menu-sidebar: #343A40;
+	--color-menu-contrast: #494E53;
+	--color-shadow: #888888;
+	--color-background-graphic:#FFFFFF;
+	--color-white: #FFFFFF;
+
+	--header-height: 56px;
+}
+
+body {
+    height: 100vh;
+    font-family: Poppins;
+    background-color: var(--color-background);
+}
+
+#left-side{
+    background: var(--color-primary);
+}
+
+#right-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row, .container-fluid{
+    height: 100%;
+}
+
+button.btn.btn-primary{
+    margin-top: 8px;
+    color: var(--color-button-text);
+    border-color: var(--color-button);
+    background-color: var(--color-button);
+}
+
+form, button{
+    width: 281px;
+}
+
+label{
+    font-size: 14px;
+    margin-top: 16px;
+    color: var(--color-primary);
+}
+
+.text{
+    display: grid;
+    margin-top: 45px;
+    margin-bottom: 25px; 
+}
+
+.text .text-settings{
+    font-size: 24px;
+}
+
+.text span{
+    font-size: 16px;
+}
+
+.text .text-settings, .text span{
+    font-weight: 300;
+    color: var(--color-white);
+}
+
+.align{
+    display: flex;
+    margin-top: 35px;
+    margin-left: 74px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.image-forgot{
+    margin-left: 60px;
+    margin-bottom: 20px;
+}

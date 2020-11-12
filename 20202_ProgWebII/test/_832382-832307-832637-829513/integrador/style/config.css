@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+:root {
+    --primary: #06285b;
+    --light: #eee;
+    --grey: #eee;
+}
+
+body {
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: var(--primary);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.bg-light {
+    background-color: var(--light) !important;
+}
+
+.bg-grey {
+    background-color: var(--grey) !important;
+}
+
+.bg-mix {
+    background: linear-gradient(180deg, var(--light) 50%, var(--grey) 0);
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border: 0;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary);
+}
+
+#sidebar-container {
+    min-height: 100vh;
+}
+
+#sidebar-container .logo {
+    padding: 0.875rem 1.25rem;
+}
+
+#sidebar-container .menu {
+    width: 14rem;
+}
+
+#button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#content {
+    overflow-y: auto;
+    height: 100vh;
+    padding-bottom: 5rem;
+    background-color: var(--grey) !important;
+}
+
+#content2 {
+    overflow-y: auto;
+    height: 100vh;
+    padding-bottom: 5rem;
+    background-color: var(--grey) !important;
+}
+
+#dropdowntrash
+{
+    margin-top:10px;
+}
+
+

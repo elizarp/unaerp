@@ -1,0 +1,132 @@
+.flex-dashboard{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+sidebar{
+    display: block;
+    height: 100%;
+    width: 300px;
+    border: 1px solid rgba(0, 0, 0, .0625);
+}
+
+sidebar .sidebar-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 30px ;
+    border: 1px solid rgba(0, 0, 0, .0625);
+    border-right: 0px;
+    height: 90px;
+}
+
+sidebar .sidebar-title img{
+    height: 50px;
+    width: 50px;
+}
+
+sidebar .sidebar-title h2{
+    font-size: 20px;
+    margin-top: 8px;
+    color: firebrick;
+}
+
+.menu{
+    border-right: 1px solid rgba(0, 0, 0, .0625);
+}
+
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    border: 1px solid rgba(0, 0, 0, .0625);
+    padding: 25px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.menu ul li svg{
+    color: rgb(38, 74, 104);
+    font-size: 36px;
+}
+
+.menu ul li a{
+    color: #72777a;
+    margin-left: 10px;
+    text-decoration: none ;
+    text-transform: uppercase;
+}
+
+.menu ul li a:hover{
+    color:  rgb(38, 74, 104);
+    transform: scale(1.03);
+    transition: .2s;
+}
+
+.hide{
+    left: -300px;
+}
+
+/*Responsive*/
+@media screen and (min-width: 951px){
+    
+    .sidebar_logout{
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 950px){
+    sidebar{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        background-color: #ffffff;
+        transition: all .3s;
+    }
+
+    .sidebar_logout{
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    sidebar{
+        position: absolute;
+        width: 250px;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        background-color: #ffffff;
+        transition: all .3s;
+    }
+
+    .sidebar_logout{
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 300px){
+    sidebar{
+        position: absolute;
+        width: 200px;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        background-color: #ffffff;
+        transition: all .3s;
+    }
+
+    .sidebar_logout{
+        display: block;
+    }
+
+}

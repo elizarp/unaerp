@@ -1,0 +1,36 @@
+#container {
+      background-color: gray;
+}
+#container h2{
+  color: black;
+  font-family: sans-serif;
+  text-align: center;
+
+}
+
+#containertwo{
+  text-align: center;
+}
+
+#containertree h2{
+  color: black;
+  font-family: sans-serif;
+  text-align: center;
+
+
+}
+
+.A{
+  color: black;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #dc3545;
+  margin: auto;
+  width: 80%;
+  border: 3px solid 
+  padding: 10px;
+  
+}
+#img{
+  width: 40px;
+}
