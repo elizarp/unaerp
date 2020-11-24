@@ -1,10 +1,8 @@
 <?php
 
-require_once "Conexao.php";
+require_once "Aluno.php";
 
-$conexaoAlunos = Conexao::getConexao();
-$consulta = $conexaoAlunos->query("SELECT id, nome, sobrenome, email, data_cadastro FROM myDB.Alunos;");
-$alunos = $consulta->fetchAll();
+$alunos = Aluno::retornaLista();
 
 require_once "cabecalho.php";
 
