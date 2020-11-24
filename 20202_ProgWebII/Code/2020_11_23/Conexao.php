@@ -23,7 +23,9 @@ class Conexao
 			return $conexao;
 		} catch (PDOException $e) {
 			$mensagemErro = $e->getMessage();
-			throw new Exception($mensagemErro);
+			header('Location: erro.php');
+			exit();
+			#throw new Exception($mensagemErro);
 		}
 	}
 }
